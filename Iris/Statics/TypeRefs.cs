@@ -3,6 +3,9 @@ namespace Framework.Iris.Statics
 {
     using Mono.Cecil;
 
+    /// <summary>
+    /// Collection of framework elements.
+    /// </summary>
     internal static class TypeRefs
     {
         private static readonly AssemblyDefinition asm;

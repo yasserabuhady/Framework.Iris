@@ -7,8 +7,8 @@ namespace Framework.Iris.EventArgs
     {
         private FieldInfo _fieldInfo;
         private Type _type;
-        private dynamic _storedvalue;
-        private dynamic _exposedvalue;
+        private object _storedValue;
+        private object _exposedValue;
 
         public FieldInfo FieldInfo
         {
@@ -22,16 +22,16 @@ namespace Framework.Iris.EventArgs
             set { _type = value; }
         }
 
-        public dynamic StoredValue
+        public object StoredValue
         {
-            get { return _storedvalue; }
-            set { _storedvalue = value; }
+            get { return _storedValue; }
+            set { _storedValue = value; }
         }
 
-        public dynamic ExposedValue
+        public object ExposedValue
         {
-            get { return _exposedvalue; }
-            set { _exposedvalue = value; }
+            get { return _exposedValue; }
+            set { _exposedValue = value; }
         }
     }
 }
